@@ -17,8 +17,20 @@ for iter = 1:num_iters
     %       of the cost function (computeCost) and gradient here.
     %
 
-
-
+  A = (X*theta-y); %(m x 1) dims---> 97 x 1
+ % disp(A);
+  delta = (1/m)*((A'*X)'); %((n+1) x 1) dims ----> 2 x 1
+  
+  %disp(delta);
+  sum(delta);
+  theta = theta - (alpha*delta) %((n+1) x 1) dims ------> 2 x 1
+  %disp(theta)
+  
+  
+  
+  
+  
+  
 
 
 
